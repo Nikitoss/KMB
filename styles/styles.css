@@ -1,0 +1,269 @@
+body {
+    font-family: Arial;
+}
+
+body main.slides {
+    color: #121212;
+}
+
+/* =============================================== HEADER =======================================================*/
+
+.header, .footer {
+    background: #121212;
+}
+
+.navbar-brand.apple-logo {
+    display: flex;
+    align-items: center;
+    max-width: 195px;
+}
+
+.apple-logo .logo-circle {
+    background: white;
+    color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.apple-logo .logo-name {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+    font-weight: 500;
+}
+
+
+.header .navbar-nav {
+    font-size: 14px;
+    color: white;
+    line-height: 1;
+}
+
+.header .navbar-nav .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+    padding: 7px 0 8px 0;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 6px 0 7px 0;
+}
+
+.header .form-inline .btn-outline-light {
+    font-size: 14px;
+    line-height: 1;
+    padding: 7px 16px 8px;
+    border-radius: 8px;
+}
+
+/* ================================================= SLIDE - 1 =======================================================*/
+
+.slide-1 {
+    padding: 120px 0;
+}
+
+.slide-1 .offer .first-line,
+.slide-1 .offer .second-line {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #121212;
+    line-height: 1;
+}
+
+.slide-1 .offer .first-line {
+    font-size: 72px;
+    position: relative;
+}
+
+.slide-1 .offer .first-line::after {
+    content: "";
+    background: #121212;
+    width: 115px;
+    position: absolute;
+    height: 5px;
+    top: 50%;
+}
+
+.slide-1 .offer .second-line {
+    font-size: 100px;
+}
+
+.slide-1 .offer .third-line {
+    font-size: 18px;
+    padding-top: 30px;
+    color: #7f7f7f;
+}
+
+.slide-1 .btn {
+    border-width: 2px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.slide-1 .btn-outline-dark:hover {
+    background-color: #121212;
+    border-color: #121212;
+}
+
+.slide-1 .fck-you-logo {
+    padding-top: 50px;
+}
+
+/* ============================================== SLIDE - 2 ==========================================================*/
+
+.slide-2 {
+    background-color: #121212;
+    color: white;
+    padding: 85px 0;
+}
+
+.slide-2 .first-line {
+    text-align: center;
+}
+
+.slide-2 .first-line .text {
+    background: white;
+    color: #121212;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 500;
+    display: inline;
+    padding: 0 90px;
+    line-height: 110px;
+}
+
+.slide-2 .second-line,
+.slide-2 .third-line {
+    padding-left: 158px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.slide-2 .second-line {
+    margin-top: 135px;
+    font-size: 72px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.slide-2 .second-line::before {
+    content: "";
+    background: white;
+    width: 115px;
+    position: absolute;
+    height: 5px;
+    top: 50%;
+    left: 0;
+}
+
+.slide-2 .third-line {
+    font-size: 48px;
+}
+
+.slide-2 .skill-list {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding-top: 90px;
+}
+
+.slide-2 .skill-list .skill-item {
+    border: 2px solid white;
+    flex: 1;
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.slide-2 .skill-list .skill-item .number {
+    font-size: 115px;
+    font-weight: bold;
+}
+
+.slide-2 .skill-list .skill-item .title {
+    font-size: 36px;
+}
+
+.slide-2 .skill-list .skill-item .subtitle {
+    font-size: 24px;
+}
+
+/* =========================================== SLIDE - 3 =============================================================*/
+
+.slide-3 {
+    padding: 85px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.slide-3 .first-line {
+    text-align: center;
+}
+
+.slide-3 .first-line .text {
+    background: #121212;
+    color: white;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 500;
+    display: inline;
+    padding: 0 90px;
+    line-height: 110px;
+}
+
+.slide-3 .second-line {
+    padding-top: 85px;
+}
+
+.slide-3 .second-line,
+.slide-3 .third-line {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.slide-3 .second-line span,
+.slide-3 .third-line span {
+    color: white;
+    background: #ed1c24;
+    flex: 1;
+    margin: 15px;
+}
+
+.slide-3 .second-line {
+    font-size: 400px;
+}
+
+.slide-3 .third-line {
+    font-size: 200px;
+}
+
+.slide-3 .fourth-line {
+    color: #ed1c24;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+/* =========================================== FOOTER ================================================================*/
+
+footer.navbar-dark.footer .navbar-text {
+    color: white;
+    font-size: 15px;
+}
