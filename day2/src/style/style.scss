@@ -1,0 +1,231 @@
+@import "reset";
+@import "container";
+@import "colors";
+@import "common";
+
+/*=================================================================================================================== */
+
+body {
+  background: url("../assets/main-img/stars.png");
+}
+
+.section-outer {
+  position: relative;
+  padding: 80px 0;
+  min-height: 600px;
+}
+
+.stars-in-background {
+  background-color: #0a1324;
+  background-blend-mode: soft-light;
+}
+
+/*=================================================================================================================== */
+
+.header {
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger {
+  margin-right: 16px;
+}
+
+.burger-text {
+  font-family: "Bebas Neue Bold", sans-serif;
+}
+
+/*=================================================================================================================== */
+
+.promo {
+  padding-top: 60px;
+}
+
+.promo-carousel {
+  padding-top: 80px;
+  position: relative;
+
+  .promo-carousel-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+
+    .promo-carousel-actions-item {
+      font-size: 13px;
+      opacity: .2;
+      line-height: 1.462;
+      padding: 0 0 30px 30px;
+      position: relative;
+
+
+      &:hover, &.active {
+        opacity: 1;
+      }
+
+      &.active:before {
+        content: "";
+        background: white;
+        width: 28px;
+        position: absolute;
+        height: 1px;
+        top: 8px;
+        left: -4px;
+      }
+    }
+  }
+
+  .promo-carousel-info {
+    margin-left: 180px;
+    width: 364px;
+
+    .promo-carousel-info-title {
+      margin-bottom: 0;
+    }
+
+    .promo-carousel-info-subtitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      line-height: 1.462;
+      text-align: left;
+      margin-top: 26px;
+    }
+  }
+}
+
+.promo {
+  .gradient-button {
+    margin: 70px auto 0 30%;
+  }
+
+  .section-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/*=================================================================================================================== */
+
+.places-section {
+  .section-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.places-info-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info-block {
+  flex: 0;
+  width: 600px;
+}
+
+.places-counter-current {
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+.places-counter-all {
+  font-size: 30px;
+  color: #0ebae1;
+  letter-spacing: 5px;
+}
+
+.button-block {
+  position: relative;
+  width: 80px;
+}
+
+.button-controller {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.button-controller .square {
+  content: "";
+  display: block;
+  border: 1px solid white;
+  width: 45px;
+  height: 45px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -4px;
+  left: -3px;
+}
+
+.button-controller {
+  fill: white;
+
+  &:hover {
+    fill: #01b6df;
+
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.square,
+.button-controller svg {
+  opacity: .3;
+}
+
+.button-controller-left {
+  position: absolute;
+  left: 0;
+}
+
+.button-controller-right {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+
+
+/*=================================================================================================================== */
+
+.text-block {
+  margin-left: 25%;
+}
+
+/*=================================================================================================================== */
+
+.section-mortgage .section-background {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.call-to-action {
+  width: 450px;
+  margin-left: auto;
+}
+
+.call-to-action-button {
+  margin-bottom: 90px;
+}
+
+/*=================================================================================================================== */
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #0a1324;
+  min-height: unset;
+
+  span {
+    opacity: .1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+  }
+}

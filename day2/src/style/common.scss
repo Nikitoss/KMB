@@ -1,0 +1,106 @@
+@import "colors";
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../assets/Bebas_Neue.ttf");
+}
+
+* {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+
+a, button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 15.4px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-inner {
+  position: relative;
+}
+
+.section-background {
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  img {
+    height: 100%;
+  }
+}
+
+.gradient-button {
+  position: relative;
+  padding: 20px 50px;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(-41deg, #1d57c4, #01b6df) 1 1;
+
+  &:hover {
+    background: linear-gradient(-41deg, #1d57c4, #01b6df);
+    padding: 23px 53px;
+    border: none;
+    color: black;
+  }
+}
+
+h1 {
+  display: block;
+  font-size: 90px;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-weight: bold;
+  line-height: 1.222;
+  text-align: left;
+  letter-spacing: 17px;
+  margin: 10px 0 80px;
+}
+
+h2, .gradient-font {
+  display: block;
+  margin: 10px 0;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background: linear-gradient(-41deg, #1d57c4, #01b6df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

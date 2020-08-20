@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- head -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Bebas+Neue" >
+    <title>MOON</title>
+</head>
+
+<!-- body -->
+<body class="stars-in-background">
+    <section class="section-outer promo">
+        <div class="section-background">
+            <img src="../assets/main-img/header-image.png" alt=""/>
+        </div>
+        <div class="section-inner container">
+            <nav class="header">
+                <a class="header_logo" href="#">
+                    <img src="assets/logo.png" alt="MOON COLDER лунные апартаменты"/>
+                </a>
+                <button id="menu">
+                    <svg class="burger" id="burger" fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="26px" height="13px">
+                        <path d="M7.000,-0.000 L26.000,-0.000 L26.000,1.000 L7.000,1.000 L7.000,-0.000 Z"/>
+                        <path d="M0.000,6.000 L26.000,6.000 L26.000,7.000 L0.000,7.000 L0.000,6.000 Z"/>
+                        <path d="M7.000,12.000 L26.000,12.000 L26.000,13.000 L7.000,13.000 L7.000,12.000 Z"/>
+                    </svg>
+                    <span class="burger-text">меню</span>
+                </button>
+            </nav>
+            <div class="promo-carousel">
+                <div class="promo-carousel-actions" id="promo-carousel-actions">
+                </div>
+                <div class="promo-carousel-info">
+                    <h1 class="promo-carousel-info-title fade" id="promo-carousel-info-title"></h1>
+                    <div class="promo-carousel-info-subtitle fade" id="promo-carousel-info-subtitle"></div>
+                </div>
+            </div>
+            <button class="gradient-button">Забронировать</button>
+        </div>
+    </section>
+
+    <section class="section-outer places-section">
+        <div class="section-background">
+            <img src="../assets/main-img/1_section.png" alt=""/>
+        </div>
+        <div class="section-inner container places-section-inner">
+            <div class="places-counter" id="places-counter">
+                <span class="places-counter-current" id="places-counter-current">1</span>
+                <span class="places-counter-all" id="places-counter-all">/5</span>
+            </div>
+            <div class="places-info-wrapper">
+                <div class="info-block">
+                    <h2 class="gradient-font">
+                        Выберите расположение
+                    </h2>
+
+                    <h1 class="place-name fade" id="places-place-name">
+                        PLACE_NAME
+                    </h1>
+
+                    <button class="gradient-button">
+                        О регионе
+                    </button>
+                </div>
+                <div class="button-block">
+                    <button class="button-controller button-controller-left" id="places-slide_back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 95 89">
+                            <path d="M94.438,48.562 L15.997,48.562 L50.181,82.746 L44.524,88.403 L0.684,44.563 L44.524,0.722 L50.181,6.379 L15.997,40.563 L94.438,40.563 L94.438,48.562 Z"/>
+                        </svg>
+                        <div class="square"/>
+                    </button>
+                    <button class="button-controller button-controller-right" id="places-slide_next">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" width="20px" height="20px" viewBox="0 0 94 88">
+                            <path d="M88.332,49.677 L50.046,87.997 L44.374,82.320 L78.649,48.014 L-0.000,48.014 L-0.000,39.986 L78.649,39.986 L44.374,5.680 L50.046,0.003 L88.332,38.323 L94.004,44.000 L88.332,49.677 Z"/>
+                        </svg>
+                        <div class="square"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-outer section-interiors">
+        <div class="section-inner container">
+            <div class="text-block">
+                <h2 class="gradient-font">
+                    Своё лунное пространство
+                </h2>
+                <h1 class="call-to-action-text">
+                    Идеальные интерьеры
+                </h1>
+            </div>
+
+            <div class="button-block">
+                <button class="button-controller button-controller-left" id="interiors-slide_back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 95 89">
+                        <path d="M94.438,48.562 L15.997,48.562 L50.181,82.746 L44.524,88.403 L0.684,44.563 L44.524,0.722 L50.181,6.379 L15.997,40.563 L94.438,40.563 L94.438,48.562 Z"/>
+                    </svg>
+                    <div class="square"/>
+                </button>
+                <button class="button-controller button-controller-right" id="interiors-slide_next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" width="20px" height="20px" viewBox="0 0 94 88">
+                        <path d="M88.332,49.677 L50.046,87.997 L44.374,82.320 L78.649,48.014 L-0.000,48.014 L-0.000,39.986 L78.649,39.986 L44.374,5.680 L50.046,0.003 L88.332,38.323 L94.004,44.000 L88.332,49.677 Z"/>
+                    </svg>
+                    <div class="square"/>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-outer section-entertainment">
+        <div class="section-background">
+            <img src="../assets/main-img/what-to-do-image.png" alt=""/>
+        </div>
+        <div class="section-inner container">
+            <div class="text-block">
+                <h2 class="gradient-font">
+                    Развлечения в регионе
+                </h2>
+                <h1 class="call-to-action-text">
+                    Чем заняться
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-outer section-mortgage">
+        <div class="section-background">
+            <img src="../assets/last.png" alt=""/>
+        </div>
+        <div class="section-inner container">
+            <div class="call-to-action">
+                <h2 class="gradient-font">
+                    Ипотека на столетие
+                </h2>
+                <h1 class="call-to-action-text">
+                    Наземная роскошь доступна
+                </h1>
+                <button class="call-to-action-button gradient-button">
+                    Выбрать апартаменты
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-outer footer">
+        <div class="section-inner container">
+            <span>Не является публичной офертой. Визуализации объекта являются ориентировочными.<br>Застройщик вправе вносить изменения в проект в соответствии с действующим законодательством<br>© СOLDER 2020</span>
+        </div>
+    </footer>
+</body>
+</html>
